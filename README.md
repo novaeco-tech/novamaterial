@@ -38,7 +38,7 @@ graph TD
     end
 
     subgraph "The Enrichment Layer"
-        API -->|Request Impact| Worker[Worker-LCA (NovaBalance)]
+        API -->|Request Impact| Worker["Worker-LCA (NovaBalance)"]
         Worker -->|Verified CO2| API
         API -->|Check Hazards| Policy[NovaPolicy]
     end
